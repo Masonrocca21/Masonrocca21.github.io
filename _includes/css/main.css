@@ -84,11 +84,14 @@ header {
     text-align: center;
     color: #fff;
     background: #{{ site.color.primary }};
+    position: relative; /* <-- AGGIUNGI QUESTA RIGA */
 }
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
+    position: relative; /* <-- AGGIUNGI QUESTA RIGA */
+    z-index: 2;   
 }
 
 header img {
@@ -529,4 +532,32 @@ footer .footer-below {
   .about-decor-img {
     display: none;
   }
+}
+
+/* Stile per il testo generato da Typed.js nell'header */
+header .intro-text #typed-skills {
+  font-size: 1.75em; /* Valore per schermi grandi, uguale a quello delle skills originali */
+  font-weight: 300;
+  display: inline-block; /* Assicura che si comporti bene */
+  min-height: 50px; /* Aggiunge un'altezza minima per evitare che il layout "salti" mentre il testo si scrive */
+}
+
+/* Riduciamo un po' la dimensione su schermi più piccoli per evitare che il testo vada a capo */
+@media(max-width:767px) {
+  header .intro-text #typed-skills {
+    font-size: 1.25em;
+    min-height: 40px;
+  }
+}
+
+/* ========================================= */
+/* Stile per il canvas di particles.js      */
+/* ========================================= */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Livello 1: Lo mette in secondo piano */
 }
