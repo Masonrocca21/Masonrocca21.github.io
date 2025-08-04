@@ -16,7 +16,15 @@
 </header>
 
 <script>
+  // Aspetta che l'intera pagina sia caricata prima di eseguire gli script
   document.addEventListener('DOMContentLoaded', function(){
+
+    // 1. Inizializza l'effetto Particles.js sullo sfondo dell'header
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('Particles.js config loaded');
+    });
+
+    // 2. Inizializza l'effetto Typed.js per il sottotitolo
     var typed = new Typed('#typed-skills', {
       strings: ["{{ site.skills }}"], // Prende le skills dal _config.yml
       typeSpeed: 50,  // Velocità di scrittura
@@ -25,13 +33,6 @@
       showCursor: true,
       cursorChar: '_',
     });
+    
   });
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-    particlesJS.load('particles-js', 'assets/particles.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
-});
 </script>
