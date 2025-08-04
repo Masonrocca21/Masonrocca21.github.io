@@ -2,8 +2,8 @@
 title: Christian Colombo
 email: christian310021@gmail.com
 url: https://masonrocca21.github.io/
-description: "Portfolio personale di Christian Colombo"
-keywords: "Creatività, determinazione, passione"
+description: "Christian Colombo's personal portfolio."
+keywords: "Creativity, determination, passion"
 skills: "Game designer - Level designer"
 meta_author: Colombo Christian
 
@@ -32,10 +32,9 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
+  copyright: Dr. Christian Colombo
   social: Around the Web
-  credits: Credits
+  credits: My Mission
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -50,13 +49,9 @@ social:
   - title: github
     url: https://github.com/Masonrocca21
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: Via Papa Giovanni XXIII, 19
-  - line: Fagnano Olona (VA), CAP 21054
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 'To create interactive experiences that evoke emotion, challenge the mind, and leave a lasting memory. One game at a time.'
 
 # Build settings
 markdown: kramdown
