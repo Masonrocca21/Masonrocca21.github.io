@@ -35,7 +35,15 @@
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}
+              {% if post.role %}
+              <li>My Role:
+                <strong>{{ post.role }}</strong>
+              </li>
+              {% endif %}
             </ul>
+            {% if post.project-url %}
+              <a href="{{ post.project-url }}" class="btn btn-primary" target="_blank"><i class="fa fa-gamepad"></i> Try it Out!</a>
+            {% endif %}
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
           </div>
