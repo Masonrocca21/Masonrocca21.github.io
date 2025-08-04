@@ -80,18 +80,40 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+
+/* ========================================= */
+/* ===== INIZIO SEZIONE HEADER MODIFICATA ===== */
+/* ========================================= */
+
 header {
-    text-align: center;
-    color: #fff;
-    background: #{{ site.color.primary }};
-    position: relative; /* <-- AGGIUNGI QUESTA RIGA */
+  position: relative; 
+  width: 100%;
+  height: 100vh; 
+  text-align: center;
+  color: #fff;
+  background: #{{ site.color.primary }};
+  overflow: hidden; 
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; 
 }
 
 header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    position: relative; /* <-- AGGIUNGI QUESTA RIGA */
-    z-index: 2;   
+  position: relative;
+  z-index: 2; 
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;  
+  padding-bottom: 0;
 }
 
 header img {
@@ -107,25 +129,27 @@ header .intro-text .name {
     font-weight: 700;
 }
 
-header .intro-text .skills {
+/* Stile per la scritta generata da Typed.js */
+header .intro-text #typed-skills {
     font-size: 1.25em;
     font-weight: 300;
+    display: inline-block;
+    min-height: 40px; 
 }
 
 @media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
-
     header .intro-text .name {
         font-size: 4.75em;
     }
 
-    header .intro-text .skills {
+    header .intro-text #typed-skills {
         font-size: 1.75em;
+        min-height: 50px;
     }
 }
+
+/* ===== FINE SEZIONE HEADER MODIFICATA ===== */
+
 
 @media(min-width:768px) {
     .navbar-fixed-top {
@@ -500,64 +524,31 @@ footer .footer-below {
 /* Stile per le immagini decorative nel titolo About */
 /* =================================================== */
 
-/* Rende il contenitore del titolo il punto di riferimento per le immagini */
 .title-container {
-  position: relative; /* Fondamentale! */
+  position: relative; 
 }
 
-/* Stile comune per entrambe le immagini decorative */
 .about-decor-img {
-  position: absolute;   /* Le svincola dal flusso normale della pagina */
-  top: 50%;             /* Le centra verticalmente rispetto al contenitore */
-  transform: translateY(-50%); /* Correzione per un centraggio verticale perfetto */
-  width: 150px;         /* Larghezza dell'immagine, modificala se necessario */
+  position: absolute;   
+  top: 50%;             
+  transform: translateY(-50%); 
+  width: 150px;         
   height: auto;
-  opacity: 0.6;         /* Leggera trasparenza, puoi cambiarla o rimuoverla */
+  opacity: 0.6;         
 }
 
-/* Posizionamento e rotazione immagine SINISTRA */
 #decor-left {
-  left: 20%;            /* Distanza dal bordo sinistro del contenitore del titolo */
-  transform: translateY(-50%) rotate(-15deg); /* Centra e poi ruota */
+  left: 20%;            
+  transform: translateY(-50%) rotate(-15deg); 
 }
 
-/* Posizionamento e rotazione immagine DESTRA */
 #decor-right {
-  right: 20%;           /* Distanza dal bordo destro del contenitore del titolo */
-  transform: translateY(-50%) rotate(15deg);  /* Centra e poi ruota */
+  right: 20%;          
+  transform: translateY(-50%) rotate(15deg);
 }
 
-/* Media Query per nascondere le immagini su schermi piccoli (es. smartphone) */
 @media (max-width: 992px) {
   .about-decor-img {
     display: none;
   }
-}
-
-/* Stile per il testo generato da Typed.js nell'header */
-header .intro-text #typed-skills {
-  font-size: 1.75em; /* Valore per schermi grandi, uguale a quello delle skills originali */
-  font-weight: 300;
-  display: inline-block; /* Assicura che si comporti bene */
-  min-height: 50px; /* Aggiunge un'altezza minima per evitare che il layout "salti" mentre il testo si scrive */
-}
-
-/* Riduciamo un po' la dimensione su schermi più piccoli per evitare che il testo vada a capo */
-@media(max-width:767px) {
-  header .intro-text #typed-skills {
-    font-size: 1.25em;
-    min-height: 40px;
-  }
-}
-
-/* ========================================= */
-/* Stile per il canvas di particles.js      */
-/* ========================================= */
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1; /* Livello 1: Lo mette in secondo piano */
 }
