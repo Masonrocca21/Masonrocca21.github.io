@@ -71,6 +71,7 @@
     <div class="row" style="margin-top: 40px;">
         <div class="col-lg-8 col-lg-offset-2 text-center">
             <h3>Education</h3>
+            <p style="font-size: 18px;"><i class="fa fa-graduation-cap"></i> Bachelor's Degree in Math – Università degli Studi di Milano</p>
             <p style="font-size: 18px;"><i class="fa fa-graduation-cap"></i> Master's Degree in Computer Science – Università degli Studi di Milano</p>
         </div>
     </div>
@@ -78,8 +79,9 @@
     <!-- La tua Call to Action con il pulsante del CV va qui -->
     <div class="row" style="margin-top: 50px;">
         <div class="col-lg-8 col-lg-offset-2 text-center">
-            <a href="/assets/CV_ColomboChristian.pdf" class="btn btn-lg btn-outline" download>
-                <i class="fa fa-download"></i> Download my CV
+            <a href="/assets/CV_ColomboChristian.pdf" class="btn btn-lg btn-outline" download 
+              onclick="gtag('event', 'download', {'event_category': 'CV', 'event_label': 'Download CV Button'});">
+              <i class="fa fa-download"></i> Download my CV
             </a>
         </div>
     </div>
