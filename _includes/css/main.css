@@ -492,3 +492,44 @@ footer .footer-below {
   display: block;
   margin: 0 auto;
 }
+
+/* =================================================== */
+/* Stile per le immagini decorative nella sezione About */
+/* =================================================== */
+
+/* Rende la sezione "about" il contenitore di riferimento per le immagini */
+#about {
+  position: relative; /* Fondamentale! */
+  overflow: hidden;   /* Impedisce alle immagini di "sbordare" in modo anomalo */
+}
+
+/* Stile comune per entrambe le immagini decorative */
+.about-decor-img {
+  position: absolute;   /* Le svincola dal flusso normale della pagina */
+  width: 200px;         /* Larghezza dell'immagine, modificala se necessario */
+  height: auto;
+  opacity: 0.5;         /* Le rende un po' trasparenti per non disturbare, puoi cambiare valore (da 0.0 a 1.0) o rimuovere la riga */
+  z-index: 0;           /* Le mette sotto il testo, per sicurezza */
+}
+
+/* Posizionamento e rotazione immagine SINISTRA */
+#decor-left {
+  top: 25%;             /* Distanza dall'alto, gioca con questo valore */
+  left: 5%;             /* Distanza dal bordo sinistro */
+  transform: rotate(-15deg); /* Rotazione in senso antiorario */
+}
+
+/* Posizionamento e rotazione immagine DESTRA */
+#decor-right {
+  bottom: 20%;          /* Distanza dal basso, gioca con questo valore */
+  right: 5%;            /* Distanza dal bordo destro */
+  transform: rotate(15deg);  /* Rotazione in senso orario */
+}
+
+/* Media Query per nascondere le immagini su schermi piccoli (es. smartphone) */
+/* Questo è importante per non creare disordine sui cellulari */
+@media (max-width: 992px) {
+  .about-decor-img {
+    display: none;
+  }
+}
