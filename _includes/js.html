@@ -30,3 +30,19 @@
 
 <!-- Libreria per l'effetto "particelle animate" -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- Script per la Barra di Progresso di Scorrimento -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var progressBar = document.querySelector('.progress-bar');
+  
+  function updateProgressBar() {
+    var totalHeight = document.body.scrollHeight - window.innerHeight;
+    var progress = (window.pageYOffset / totalHeight) * 100;
+    progressBar.style.width = progress + '%';
+  }
+
+  window.addEventListener('scroll', updateProgressBar);
+  updateProgressBar(); // Calcola la posizione iniziale al caricamento
+});
+</script>
