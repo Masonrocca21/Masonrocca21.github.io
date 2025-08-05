@@ -153,7 +153,7 @@ header .intro-text #typed-skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 35px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -168,7 +168,7 @@ header .intro-text #typed-skills {
 
     /* IDEA 5: La navbar diventa solida quando si scorre */
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 20px 0;
         background-color: #{{ site.color.secondary }}; /* Colore scuro del tuo sito */
         box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Ombra opzionale */
     }
@@ -219,8 +219,7 @@ header .intro-text #typed-skills {
 .navbar .navbar-nav > .active > a,
 .navbar .navbar-nav > .active > a:hover,
 .navbar .navbar-nav > .active > a:focus {
-    color: #fff;
-    background-color: transparent;
+     color: #f1f1f1;
 }
 
 
