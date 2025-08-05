@@ -684,7 +684,28 @@ footer .footer-below {
   width: 0%; /* Inizia da zero */
 }
 
+/* Nuovo sfondo scuro per il contenuto del modal */
 .portfolio-modal .modal-content {
-  background: transparent; /* Rende trasparente lo sfondo bianco di default */
-  box-shadow: none; /* Rimuove eventuali ombre che non servono più */
+  background-color: #2c3e50; /* Colore secondario del tuo tema */
+  color: #fff; /* Testo bianco */
+}
+
+/* Stile per il banner del progetto */
+.modal-banner {
+  margin: -100px -100px 30px -100px; /* Margini negativi per farlo "sanguinare" ai bordi */
+}
+
+/* Testo del modal leggibile sullo sfondo scuro */
+.modal-body h2, .modal-body p, .modal-body h4, .modal-body li {
+    color: #fff;
+}
+.modal-body .text-muted {
+    color: #ccc !important;
+}
+.modal-body hr.star-primary {
+    border-color: #fff;
+}
+.modal-body hr.star-primary:after {
+    color: #fff;
+    background-color: #2c3e50;
 }

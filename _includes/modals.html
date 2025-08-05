@@ -1,11 +1,7 @@
 <!-- Portfolio Modals -->
 {% for post in site.posts %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
-  aria-hidden="true" 
-  {% if post.background-img %}
-    style="background-image: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../img/portfolio/{{ post.background-img }}'); background-size: cover;"
-  {% endif %}
-  >
+  aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
@@ -17,6 +13,11 @@
         <!-- Uso col-lg-10 per rendere il popup un po' più largo e arioso -->
         <div class="col-lg-10 col-lg-offset-1">
           <div class="modal-body">
+            {% if post.header-banner %}
+            <div class="modal-banner">
+              <img src="img/portfolio/{{ post.header-banner }}" class="img-responsive" alt="Project Banner">
+            </div>
+            {% endif %}
             
             <!-- ====== 1. TITOLO & SOTTOTITOLO ====== -->
             <h2>{{ post.title }}</h2>
