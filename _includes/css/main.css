@@ -246,6 +246,16 @@ header .intro-text #typed-skills {
 .navbar .navbar-nav > .active > a::after {
     width: 80%;
 }
+
+.navbar-default .navbar-brand {
+    color: #fff; /* Assicura che parta bianco */
+    transition: color 0.3s ease;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #f1f1f1 !important; /* Stesso colore bianco-grigio dell'hover degli altri link */
+}
 /* ===== FINE SEZIONE NAVBAR MODIFICATA ===== */
 section {
     padding: 100px 0;
@@ -546,6 +556,35 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.portfolio-item .portfolio-caption {
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+.portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none; /* Rimuove il maiuscolo forzato se non ti piace */
+}
+.portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Nuovo effetto hover per il portfolio */
+.portfolio-item .portfolio-link img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item .portfolio-link:hover img {
+  transform: scale(1.05); /* Leggero zoom all'immagine */
+}
+
+/* Rende il velo e l'icona più discreti e animati */
+.portfolio-item .portfolio-link .caption {
+  background: rgba(24, 188, 156, 0.8); /* Colore primario con un po' di trasparenza */
+  transition: opacity 0.3s ease;
 }
 
 .navbar-nav>.active>a {

@@ -5,47 +5,72 @@
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
-        <div class="rl">
-        </div>
+        <div class="rl"></div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <!-- Uso col-lg-10 per rendere il popup un po' più largo e arioso -->
+        <div class="col-lg-10 col-lg-offset-1">
           <div class="modal-body">
+            
+            <!-- ====== 1. TITOLO & SOTTOTITOLO ====== -->
             <h2>{{ post.title }}</h2>
+            {% if post.subtitle %}
+            <p class="item-intro text-muted" style="margin-bottom: 30px; font-style: italic;">{{ post.subtitle }}</p>
+            {% endif %}
             <hr class="star-primary">
+
+            <!-- ====== 2. MEDIA PRINCIPALE (VIDEO O IMMAGINE) ====== -->
+            {% if post.video-embed %}
+            <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 30px;">
+              <iframe class="embed-responsive-item" src="{{ post.video-embed }}" allowfullscreen></iframe>
+            </div>
+            {% else %}
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.description %}
-            <p>{{ post.description }}</p>
             {% endif %}
-            <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
-              </li>
+
+            <!-- ====== 3. LAYOUT A DUE COLONNE ====== -->
+            <div class="row" style="text-align: left; margin-top: 30px; font-size: 16px;">
+              <!-- === Colonna Sinistra (Descrizione) === -->
+              <div class="col-md-7">
+                <h4 style="text-transform: uppercase; font-weight: 700;">Project Overview</h4>
+                <p>{{ post.description | newline_to_br }}</p> <!-- newline_to_br permette di usare gli "a capo" nel testo -->
+              </div>
+
+              <!-- === Colonna Destra (Dettagli) === -->
+              <div class="col-md-4 col-md-offset-1">
+                <h4 style="text-transform: uppercase; font-weight: 700;">Key Details</h4>
+                <ul class="list-unstyled" style="line-height: 2;">
+                  {% if post.role %}
+                    <li><i class="fa fa-user fa-fw" style="margin-right: 5px;"></i> <strong>My Role:</strong><br>{{ post.role }}</li>
+                  {% endif %}
+                  {% if post.tags %}
+                    <li><i class="fa fa-cogs fa-fw" style="margin-right: 5px;"></i> <strong>Technologies:</strong><br>{{ post.tags | join: ", " }}</li>
+                  {% endif %}
+                  {% if post.project-date %}
+                    <li><i class="fa fa-calendar fa-fw" style="margin-right: 5px;"></i> <strong>Date:</strong><br>{{ post.project-date }}</li>
+                  {% endif %}
+                   {% if post.client %}
+                    <li><i class="fa fa-briefcase fa-fw" style="margin-right: 5px;"></i> <strong>Context:</strong><br>{{ post.client }}</li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+
+            <!-- ====== 4. PULSANTI D'AZIONE (CTA) ====== -->
+            <div style="margin-top: 40px; text-align: center;">
+              {% if post.project-url %}
+                <a href="{{ post.project-url }}" class="btn btn-primary btn-lg" target="_blank"><i class="fa fa-gamepad"></i> Try it Out!</a>
               {% endif %}
-              {% if post.project-date %}
-              <li>Date:
-                <strong>{{ post.project-date }}</strong>
-              </li>
+              {% if post.repo-url %}
+                <a href="{{ post.repo-url }}" class="btn btn-default btn-lg" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
               {% endif %}
-              {% if post.category %}
-              <li>Service:
-                <strong>{{ post.category }}</strong>
-              </li>
-              {% endif %}
-              {% if post.role %}
-              <li>My Role:
-                <strong>{{ post.role }}</strong>
-              </li>
-              {% endif %}
-            </ul>
-            {% if post.project-url %}
-              <a href="{{ post.project-url }}" class="btn btn-primary" target="_blank"><i class="fa fa-gamepad"></i> Try it Out!</a>
-            {% endif %}
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-              Close</button>
+            </div>
+            
+            <!-- ====== 5. PULSANTE "CLOSE" ====== -->
+            <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" style="margin-top: 30px;"><i class="fa fa-times"></i> Close</button>
+
           </div>
         </div>
       </div>
