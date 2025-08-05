@@ -153,7 +153,7 @@ header .intro-text #typed-skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 35px 0;
+        padding: 30px 0; /* Altezza modificata */
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -166,11 +166,10 @@ header .intro-text #typed-skills {
         transition: all .3s;
     }
 
-    /* IDEA 5: La navbar diventa solida quando si scorre */
     .navbar-fixed-top.navbar-shrink {
-        padding: 20px 0;
-        background-color: #{{ site.color.secondary }}; /* Colore scuro del tuo sito */
-        box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Ombra opzionale */
+        padding: 15px 0; /* Altezza modificata */
+        background-color: #{{ site.color.secondary }};
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -192,13 +191,45 @@ header .intro-text #typed-skills {
     letter-spacing: 1px;
 }
 
-/* IDEA 7: Stile per l'effetto hover con la linea */
-.navbar .navbar-nav li a {
-    position: relative; /* Necessario per posizionare la linea */
+.navbar-default {
+    border-color: transparent;
+    background: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-inverse {
+    border-color: transparent;
+    background: transparent;
+}
+
+/* ======================================================= */
+/* REGOLE SPECIFICHE PER I LINK DELLA NAVBAR                 */
+/* ======================================================= */
+
+/* Stile base per tutti i link della navbar */
+.navbar-default .navbar-nav > li > a {
+    color: #fff; /* Assicura che partano bianchi */
+    position: relative;
     background: none !important;
     transition: color 0.3s ease;
 }
 
+/* Effetto hover per i link NON attivi */
+.navbar-default .navbar-nav > li:not(.active) > a:hover,
+.navbar-default .navbar-nav > li:not(.active) > a:focus {
+    color: #f1f1f1 !important; /* Colore bianco-grigio, con !important per sicurezza */
+}
+
+/* Stile per il link ATTIVO */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff !important; /* Forza il bianco */
+    background-color: transparent !important;
+    font-weight: 700; /* Lo rende grassetto */
+}
+
+/* Stile per la linea animata sotto */
 .navbar .navbar-nav li a::after {
     content: '';
     position: absolute;
@@ -215,26 +246,6 @@ header .intro-text #typed-skills {
 .navbar .navbar-nav > .active > a::after {
     width: 80%;
 }
-
-.navbar .navbar-nav > .active > a,
-.navbar .navbar-nav > .active > a:hover,
-.navbar .navbar-nav > .active > a:focus {
-     color: #f1f1f1 !important;
-}
-
-
-/* IDEA 5: La navbar parte trasparente */
-.navbar-default {
-    border-color: transparent;
-    background: transparent;
-    transition: all 0.4s ease-in-out; /* Animazione per il cambio di colore */
-}
-
-.navbar-inverse { /* Aggiungo anche a .navbar-inverse per sicurezza */
-    border-color: transparent;
-    background: transparent;
-}
-
 /* ===== FINE SEZIONE NAVBAR MODIFICATA ===== */
 section {
     padding: 100px 0;
