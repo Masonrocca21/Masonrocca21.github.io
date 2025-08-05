@@ -85,6 +85,16 @@
                 <a href="{{ post.repo-url }}" class="btn btn-default btn-lg" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
               {% endif %}
             </div>
+              <!-- ===== NUOVI PULSANTI PER I DOCUMENTI ===== -->
+              {% if post.gdd-id %}
+                <a href="https://drive.google.com/file/d/{{ post.gdd-id }}/preview" class="btn btn-info btn-lg" target="_blank"><i class="fa fa-file-alt"></i> View GDD</a>
+              {% endif %}
+
+              {% if post.tdd-id %}
+                <a href="https://drive.google.com/file/d/{{ post.tdd-id }}/preview" class="btn btn-info btn-lg" target="_blank"><i class="fa fa-cogs"></i> View TDD</a>
+              {% endif %}
+            <!-- ===== FINE NUOVI PULSANTI ===== -->
+            </div>
             
             <!-- ====== 5. PULSANTE "CLOSE" ====== -->
             <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" style="margin-top: 30px;"><i class="fa fa-times"></i> Close</button>
