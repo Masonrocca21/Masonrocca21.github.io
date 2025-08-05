@@ -4,7 +4,7 @@ subtitle: "A puzzle game where you plan a murder to satisfy your client's will"
 modal-id: 1
 date: 2024-12-8
 img: MurderMysteryInc.png
-modal-bg-color: "#FACC2E"        # Colore di sfondo del popup (es. giallo)
+modal-bg-color: "#FFE16B"        # Colore di sfondo del popup (es. giallo)
 modal-text-color: "#2c3e50"      # Colore del testo (es. scuro)
 frame-top: "bordo-superiore.png" # Immagine per il bordo superiore
 frame-bottom: "bordo-inferiore.png" # Immagine per il bordo inferiore

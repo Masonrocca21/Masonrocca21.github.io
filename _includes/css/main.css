@@ -703,26 +703,28 @@ footer .footer-below {
 .portfolio-modal[data-frame-top] .modal-content::before {
   content: '';
   position: absolute;
-  top: -60px; /* Adatta questo valore all'altezza del tuo bordo */
+  top: -80px; /* Adatta questo valore all'altezza del tuo bordo */
   left: 0;
   width: 100%;
-  height: 60px; /* Adatta questo valore all'altezza del tuo bordo */
+  height: 100px; /* Adatta questo valore all'altezza del tuo bordo */
   background-image: var(--frame-top-url);
   background-size: contain;
   background-repeat: repeat-x;
+   z-index: 10; /* Aggiunto per sicurezza, per portarlo sopra altri elementi */
 }
 
 /* Pseudo-elemento per il bordo INFERIORE */
 .portfolio-modal[data-frame-bottom] .modal-content::after {
   content: '';
   position: absolute;
-  bottom: -60px; /* Adatta questo valore all'altezza del tuo bordo */
+  bottom: -80px; /* Adatta questo valore all'altezza del tuo bordo */
   left: 0;
   width: 100%;
-  height: 60px; /* Adatta questo valore all'altezza del tuo bordo */
+  height: 100px; /* Adatta questo valore all'altezza del tuo bordo */
   background-image: var(--frame-bottom-url);
   background-size: contain;
   background-repeat: repeat-x;
+  z-index: 10; /* Aggiunto per sicurezza, per portarlo sopra altri elementi */
 }
 
 /* Regole per adattare il testo e gli elementi interni al colore personalizzato */
