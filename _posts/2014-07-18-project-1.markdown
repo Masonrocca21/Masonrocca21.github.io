@@ -1,11 +1,32 @@
 ---
-layout: default
+title: "Murder Mystery Incorporated"
+subtitle: "A puzzle game where you plan a murder to satisfy your client's will"
 modal-id: 1
-date: 2014-07-18
-img: cabin.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+date: 2024-12-8
+img: MurderMysteryInc.png
+alt: "Screenshot del platform 2D"
+video-embed: "https://youtu.be/2-QAznsU8a4" # Opzionale
+
+description: > # L'uso di > permette di scrivere su più righe
+  Sometimes people just want to kill someone and get away with it. However, not everyone is a crime genius… and that’s where you come in! 
+  As a member of Murder Mystery Incorporated, your goal is to orchestrate Pulitzer-worthy assassinations and have the guilt fall on someone else, leaving your client free of any suspicions. 
+
+  Features
+  • Prepare the environment
+  • plan your actions on a timeline
+  • refer to the guests' profiles to predict their behavior, choosing your scapegoat 
+  • Make sure that all hints point to them.
+  • Then, on the night of the crime, sit back and watch your genius unfold.
+
+  At the core of the game lies this "trial and error" philosophy, aiming to entertain the player as they search for the best way to be a killer without being seen.
+
+
+
+role: "Game & Level Designer, Game programmer"
+tags:
+  - Unity engine
+
+project-date: "Dicembre 2024"
+client: "New game Designer 2025"
+project-url: "https://polimi-game-collective.itch.io/murder-mystery-incorporated"
 ---
