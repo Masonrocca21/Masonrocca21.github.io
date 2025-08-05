@@ -683,3 +683,8 @@ footer .footer-below {
   background-color: #{{ site.color.primary }}; /* Colore della barra che si riempie */
   width: 0%; /* Inizia da zero */
 }
+
+.portfolio-modal .modal-content {
+  background: transparent; /* Rende trasparente lo sfondo bianco di default */
+  box-shadow: none; /* Rimuove eventuali ombre che non servono più */
+}

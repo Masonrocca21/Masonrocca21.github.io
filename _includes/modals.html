@@ -1,7 +1,11 @@
 <!-- Portfolio Modals -->
 {% for post in site.posts %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
-  aria-hidden="true">
+  aria-hidden="true" 
+  {% if post.background-img %}
+    style="background-image: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../img/portfolio/{{ post.background-img }}'); background-size: cover;"
+  {% endif %}
+  >
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
@@ -43,7 +47,13 @@
                 <h4 style="text-transform: uppercase; font-weight: 700;">Key Details</h4>
                 <ul class="list-unstyled" style="line-height: 2;">
                   {% if post.role %}
-                    <li><i class="fa fa-user fa-fw" style="margin-right: 5px;"></i> <strong>My Role:</strong><br>{{ post.role }}</li>
+                    <li><i class="fa fa-user fa-fw"></i> <strong>My Role:</strong>
+                      <ul style="padding-left: 25px; margin-top: 5px;">
+                      {% for item in post.role %}
+                        <li>{{ item }}</li>
+                      {% endfor %}
+                      </ul>
+                    </li>
                   {% endif %}
                   {% if post.tags %}
                     <li><i class="fa fa-cogs fa-fw" style="margin-right: 5px;"></i> <strong>Technologies:</strong><br>{{ post.tags | join: ", " }}</li>
