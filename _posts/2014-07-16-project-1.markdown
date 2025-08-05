@@ -35,4 +35,5 @@ tags:
 project-date: "Dicembre 2024"
 client: "New game Designer 2025"
 project-url: "https://polimi-game-collective.itch.io/murder-mystery-incorporated"
+gdd-id: "1r4g3uC3WTUGSQwhVXDKH3BPoY5GNTzDB"   # (Opzionale)
 ---
