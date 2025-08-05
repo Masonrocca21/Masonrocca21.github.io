@@ -684,25 +684,29 @@ footer .footer-below {
   width: 0%; /* Inizia da zero */
 }
 
-/* ========================================= */
-/* Stile per la Cornice Personalizzata dei Popup */
-/* ========================================= */
+/* ============================================================= */
+/* Stile per la Cornice e Sfondo Personalizzati dei Popup         */
+/* ============================================================= */
 
 .portfolio-modal .modal-content {
-  position: relative; /* Fondamentale per posizionare i bordi */
-  background-color: #FACC2E; /* O IL GIALLO CHE PREFERISCI */
-  color: #2c3e50; /* Testo scuro per contrasto */
-  border: 10px solid #D5AB0E; /* Bordo più scuro opzionale */
+  position: relative;
+  /* Colori di fallback (se non specificati nel progetto) */
+  background-color: #fff; 
+  color: #2c3e50;
+  
+  /* Usa le variabili CSS se esistono */
+  background-color: var(--modal-bg, #fff);
+  color: var(--modal-text, #2c3e50);
 }
 
 /* Pseudo-elemento per il bordo SUPERIORE */
 .portfolio-modal[data-frame-top] .modal-content::before {
   content: '';
   position: absolute;
-  top: -60px; /* Sposta il bordo sopra il popup. Gioca con questo valore! */
+  top: -60px; /* Adatta questo valore all'altezza del tuo bordo */
   left: 0;
   width: 100%;
-  height: 60px; /* Altezza del tuo bordo. Adattala! */
+  height: 60px; /* Adatta questo valore all'altezza del tuo bordo */
   background-image: var(--frame-top-url);
   background-size: contain;
   background-repeat: repeat-x;
@@ -712,26 +716,27 @@ footer .footer-below {
 .portfolio-modal[data-frame-bottom] .modal-content::after {
   content: '';
   position: absolute;
-  bottom: -60px; /* Sposta il bordo sotto il popup. */
+  bottom: -60px; /* Adatta questo valore all'altezza del tuo bordo */
   left: 0;
   width: 100%;
-  height: 60px; /* Altezza del tuo bordo. */
+  height: 60px; /* Adatta questo valore all'altezza del tuo bordo */
   background-image: var(--frame-bottom-url);
   background-size: contain;
   background-repeat: repeat-x;
 }
 
-/* Modifiche per far funzionare lo sfondo giallo */
+/* Regole per adattare il testo e gli elementi interni al colore personalizzato */
 .modal-body h2, .modal-body h4, .modal-body li {
-    color: #2c3e50;
+    color: var(--modal-text, #2c3e50);
 }
 .modal-body .text-muted {
-    color: #555 !important;
+    color: var(--modal-text, #555) !important;
+    opacity: 0.8; /* Rende il sottotitolo leggermente più chiaro */
 }
 .modal-body hr.star-primary {
-    border-color: #2c3e50;
+    border-color: var(--modal-text, #2c3e50);
 }
 .modal-body hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #FACC2E; /* O IL TUO GIALLO */
+    color: var(--modal-text, #2c3e50);
+    background-color: var(--modal-bg, #fff);
 }

@@ -3,15 +3,16 @@
 <div class="portfolio-modal modal fade" 
      id="portfolioModal-{{ post.modal-id }}"
      tabindex="-1" role="dialog" aria-hidden="true"
-
-     {% if post.frame-top %}
-       data-frame-top="true" 
-       style="--frame-top-url: url('../img/portfolio/{{ post.frame-top }}');"
-     {% endif %}
-     {% if post.frame-bottom %}
-       data-frame-bottom="true" 
-       style="--frame-bottom-url: url('../img/portfolio/{{ post.frame-bottom }}');"
-     {% endif %}
+     
+     style="
+       {% if post.modal-bg-color %}--modal-bg: {{ post.modal-bg-color }};{% endif %}
+       {% if post.modal-text-color %}--modal-text: {{ post.modal-text-color }};{% endif %}
+       {% if post.frame-top %}--frame-top-url: url('../img/portfolio/{{ post.frame-top }}');{% endif %}
+       {% if post.frame-bottom %}--frame-bottom-url: url('../img/portfolio/{{ post.frame-bottom }}');{% endif %}
+     "
+     
+     {% if post.frame-top %}data-frame-top="true"{% endif %}
+     {% if post.frame-bottom %}data-frame-bottom="true"{% endif %}
 >
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
