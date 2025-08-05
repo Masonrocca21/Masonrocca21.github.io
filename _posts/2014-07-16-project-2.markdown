@@ -19,7 +19,7 @@ role:
   - Game & Level Designer
   - Game Programmer
   - AI designer
-  - UI desogner
+  - UI designer
 tags:
   - Unreal engine 5
 

@@ -1,11 +1,29 @@
 ---
-layout: default
+title: "GeneticsBezier"
+subtitle: "An interactive tool to create surfaces based on Genetics Algorithms and computational geometry"
 modal-id: 3
-date: 2014-07-16
-img: circus.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+date: 2024-2-14
+img: GeneticsBezier.png
+modal-bg-color: "#010100"        # Colore di sfondo del popup (es. giallo)
+modal-text-color: "#F5F5F5"      # Colore del testo (es. scuro)
+alt: "Screenshot del platform 2D"
+video-embed:  # Opzionale, da fare
+
+description: > # L'uso di > permette di scrivere su più righe
+   Discover a project where mathematics meets natural selection.
+   We explore Bézier surfaces, the elegant curves shaped by control points and Bernstein polynomials, and breathe new life into them using genetic algorithms inspired by evolutionary biology.
+   In our application, each Bézier surface is a digital organism. By encoding its control points as a genome, we apply crossover and mutation operations to generate entirely new surfaces—offspring that inherit features from their “parent” surfaces and evolve over time.
+   This hybrid approach bridges geometric design and computational intelligence, opening up creative possibilities for surface modeling, generative art, and procedural design.
+   
+   Are you ready to see what happens when Bézier meets Darwin?
+
+role:
+  - Project Designer
+  - Project Programmer
+
+tags:
+  - Unity engine 
+
+project-date: "Febbraio 2024"
+project-url: "http://www.mat.unimi.it/users/alzati/Geometria_Computazionale_98-99/apps/geneticbezier/progetto.html#"
 ---
