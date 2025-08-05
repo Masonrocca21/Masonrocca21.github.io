@@ -706,7 +706,7 @@ footer .footer-below {
   top: -80px; /* Adatta questo valore all'altezza del tuo bordo */
   left: 0;
   width: 100%;
-  height: 100px; /* Adatta questo valore all'altezza del tuo bordo */
+  height: 300px; /* Adatta questo valore all'altezza del tuo bordo */
   background-image: var(--frame-top-url);
   background-size: contain;
   background-repeat: repeat-x;
