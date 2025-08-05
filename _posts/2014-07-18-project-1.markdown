@@ -5,7 +5,7 @@ modal-id: 1
 date: 2024-12-8
 img: MurderMysteryInc.png
 alt: "Screenshot del platform 2D"
-video-embed: "https://youtu.be/2-QAznsU8a4" # Opzionale
+video-embed: "https://www.youtube.com/embed/2-QAznsU8a4?si=G03rzjP7_Z9XonAR" # Opzionale
 
 description: > # L'uso di > permette di scrivere su più righe
   Sometimes people just want to kill someone and get away with it. However, not everyone is a crime genius… and that’s where you come in! 
