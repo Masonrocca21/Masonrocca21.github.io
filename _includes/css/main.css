@@ -684,28 +684,54 @@ footer .footer-below {
   width: 0%; /* Inizia da zero */
 }
 
-/* Nuovo sfondo scuro per il contenuto del modal */
+/* ========================================= */
+/* Stile per la Cornice Personalizzata dei Popup */
+/* ========================================= */
+
 .portfolio-modal .modal-content {
-  background-color: #2c3e50; /* Colore secondario del tuo tema */
-  color: #fff; /* Testo bianco */
+  position: relative; /* Fondamentale per posizionare i bordi */
+  background-color: #FACC2E; /* O IL GIALLO CHE PREFERISCI */
+  color: #2c3e50; /* Testo scuro per contrasto */
+  border: 10px solid #D5AB0E; /* Bordo più scuro opzionale */
 }
 
-/* Stile per il banner del progetto */
-.modal-banner {
-  margin: -100px -100px 30px -100px; /* Margini negativi per farlo "sanguinare" ai bordi */
+/* Pseudo-elemento per il bordo SUPERIORE */
+.portfolio-modal[data-frame-top] .modal-content::before {
+  content: '';
+  position: absolute;
+  top: -60px; /* Sposta il bordo sopra il popup. Gioca con questo valore! */
+  left: 0;
+  width: 100%;
+  height: 60px; /* Altezza del tuo bordo. Adattala! */
+  background-image: var(--frame-top-url);
+  background-size: contain;
+  background-repeat: repeat-x;
 }
 
-/* Testo del modal leggibile sullo sfondo scuro */
-.modal-body h2, .modal-body p, .modal-body h4, .modal-body li {
-    color: #fff;
+/* Pseudo-elemento per il bordo INFERIORE */
+.portfolio-modal[data-frame-bottom] .modal-content::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; /* Sposta il bordo sotto il popup. */
+  left: 0;
+  width: 100%;
+  height: 60px; /* Altezza del tuo bordo. */
+  background-image: var(--frame-bottom-url);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+/* Modifiche per far funzionare lo sfondo giallo */
+.modal-body h2, .modal-body h4, .modal-body li {
+    color: #2c3e50;
 }
 .modal-body .text-muted {
-    color: #ccc !important;
+    color: #555 !important;
 }
 .modal-body hr.star-primary {
-    border-color: #fff;
+    border-color: #2c3e50;
 }
 .modal-body hr.star-primary:after {
-    color: #fff;
-    background-color: #2c3e50;
+    color: #2c3e50;
+    background-color: #FACC2E; /* O IL TUO GIALLO */
 }

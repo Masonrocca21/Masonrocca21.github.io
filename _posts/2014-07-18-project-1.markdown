@@ -4,7 +4,8 @@ subtitle: "A puzzle game where you plan a murder to satisfy your client's will"
 modal-id: 1
 date: 2024-12-8
 img: MurderMysteryInc.png
-header-banner: progetto-bg.png
+frame-top: "bordo-superiore.png" # (Opzionale)
+frame-bottom: "bordo-inferiore.png" # (Opzionale)
 alt: "Screenshot del platform 2D"
 video-embed: "https://www.youtube.com/embed/2-QAznsU8a4?si=G03rzjP7_Z9XonAR" # Opzionale
 
