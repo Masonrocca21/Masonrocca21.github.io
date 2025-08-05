@@ -4,7 +4,7 @@ subtitle: "An interactive tool to create surfaces based on Genetics Algorithms a
 modal-id: 3
 date: 2024-2-14
 img: GeneticsBezier.png
-modal-bg-color: "#010100"        # Colore di sfondo del popup (es. giallo)
+modal-bg-color: "#902528"        # Colore di sfondo del popup (es. giallo)
 modal-text-color: "#F5F5F5"      # Colore del testo (es. scuro)
 alt: "Screenshot del platform 2D"
 video-embed:  # Opzionale, da fare

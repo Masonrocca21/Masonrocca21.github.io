@@ -25,4 +25,7 @@ tags:
 
 project-date: "Luglio 2024"
 client: "New game Designer 2024"
+# ID dei documenti da Google Drive
+gdd-id: "1E9Y5pS_vdBMhZ_v_FhRSN5UeDMjVcu4b"   # (Opzionale)
+tdd-id: "1yZ-PlkAq-BDjmtxKSHNaORIJpZd3xgfS"   # (Opzionale)
 ---
