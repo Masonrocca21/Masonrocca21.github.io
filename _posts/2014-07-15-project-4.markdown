@@ -1,12 +1,36 @@
 ---
-layout: default
+title: "RaceAgainstTime"
 project-type: personal
+subtitle: "A puzzle game where you must break a teporal loop"
 modal-id: 4
-date: 2014-07-15
-img: game.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+date: 2025-12
+img: RaceAgainstTime.png
+modal-bg-color: "#001886"        # Colore di sfondo del popup 
+modal-text-color: "#ffffffff"      # Colore del testo 
+alt: "Screenshot del platform 2D"
+video-embed: # Opzionale/Da fare
+
+description: > # L'uso di > permette di scrivere su più righe
+  COMING SOON
+  
+  You wake up alone on a spaceship. It's quiet, too quiet.
+  Something feels wrong… and then, suddenly, everything resets.
+
+  You're trapped in a temporal loop: every 8 minutes, time rewinds. The ship returns to its original state. Everyone and everything forgets,
+  except you.
+
+  Your only way out? A mysterious code.
+  But here's the twist: the code is scattered across different rooms, hidden in fragments, buried in timelines you’ll have to revisit. Again and again.
+
+  Explore, observe, and adapt.
+  Each loop gives you one more piece of the puzzle, one more chance to uncover what happened, and why you're caught in this bizarre cycle.
+
+  This is sci-fi with a twist of time travel, mystery, and just enough chaos to keep things interesting. 
+
+role:
+  - Game & Level Designer
+tags:
+  - Unity engine
+
+project-date: "2025 - Coming soon"
 ---
