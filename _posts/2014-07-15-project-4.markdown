@@ -3,7 +3,7 @@ title: "RaceAgainstTime"
 project-type: personal
 subtitle: "A puzzle game where you must break a teporal loop"
 modal-id: 4
-date: 2025-12
+date: 2025-12-15
 img: RaceAgainstTime.png
 modal-bg-color: "#001886"        # Colore di sfondo del popup 
 modal-text-color: "#ffffffff"      # Colore del testo 
