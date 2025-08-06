@@ -1,5 +1,6 @@
 ---
 title: "Murder Mystery Incorporated"
+project-type: academic
 subtitle: "A puzzle game where you plan a murder to satisfy your client's will"
 modal-id: 1
 date: 2024-12-8

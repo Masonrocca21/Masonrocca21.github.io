@@ -1,5 +1,6 @@
 ---
 title: "UNIPAST-The Mangiagalli Project"
+project-type: academic
 subtitle: "It Takes Two finds Super Mario in this cooperative platforming experience"
 modal-id: 2
 date: 2024-7-5

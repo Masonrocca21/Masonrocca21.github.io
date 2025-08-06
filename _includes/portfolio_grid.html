@@ -1,29 +1,70 @@
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
   <div class="container portfolio-flex-grid">
+
+    <!-- ============================================= -->
+    <!-- ===== ZONA 1: PROGETTI PERSONALI ===== -->
+    <!-- ============================================= -->
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Portfolio</h2>
+        <h2>Personal Projects</h2>
         <hr class="star-primary">
+        <p class="text-muted" style="font-size: 18px; margin-top: -15px; margin-bottom: 20px;">Projects born from passion and curiosity.</p>
       </div>
     </div>
     <div class="portfolio-flex-row">
       {% for post in site.posts %}
-      <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
+        {% if post.project-type == 'personal' %}
+          <!-- Questo è il codice di una singola "card" del progetto (invariato) -->
+          <div class="portfolio-flex-item portfolio-item">
+            <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+            </a>
+            <div class="portfolio-caption">
+              <h4>{{ post.title }}</h4>
+              <p class="text-muted">{{ post.category }}</p>
             </div>
           </div>
-          <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-        </a>
-        <div class="portfolio-caption">
-          <h4>{{ post.title }}</h4>
-          <p class="text-muted">{{ post.category }}</p>
-        </div>
-      </div>
+        {% endif %}
       {% endfor %}
     </div>
+
+    <!-- ============================================= -->
+    <!-- ===== ZONA 2: PROGETTI ACCADEMICI ===== -->
+    <!-- ============================================= -->
+    <div class="row" style="margin-top: 80px;"> <!-- Aggiungo spazio tra le due sezioni -->
+      <div class="col-lg-12 text-center">
+        <h2>Academic Projects</h2>
+        <hr class="star-primary">
+        <p class="text-muted" style="font-size: 18px; margin-top: -15px; margin-bottom: 20px;">Coursework and team projects developed during my studies.</p>
+      </div>
+    </div>
+    <div class="portfolio-flex-row">
+      {% for post in site.posts %}
+        {% if post.project-type == 'academic' %}
+          <!-- Qui incolliamo ESATTAMENTE lo stesso codice della "card" di prima -->
+          <div class="portfolio-flex-item portfolio-item">
+            <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+            </a>
+            <div class="portfolio-caption">
+              <h4>{{ post.title }}</h4>
+              <p class="text-muted">{{ post.category }}</p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
   </div>
 </section>

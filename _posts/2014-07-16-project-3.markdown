@@ -1,5 +1,6 @@
 ---
 title: "GeneticsBezier"
+project-type: academic
 subtitle: "An interactive tool to create surfaces based on Genetics Algorithms and computational geometry"
 modal-id: 3
 date: 2024-2-14
