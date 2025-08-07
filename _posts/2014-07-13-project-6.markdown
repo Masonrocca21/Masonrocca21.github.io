@@ -1,11 +1,37 @@
 ---
-layout: default
-modal-id: 6
-date: 2014-07-15
-img: submarine.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+title: "DESM - Distributed Energy Supply Management"
+project-type: academic
+subtitle: "A simulation of an energy supply network overseen by a renewable energy provider"
+modal-id: 5
+date: 2025-6-10
+img: DESM.png
+modal-bg-color: "#71a882ff"        # Colore di sfondo del popup (es. giallo)
+modal-text-color: "#000000ff"      # Colore del testo (es. scuro)
+alt: "Screenshot del platform 2D"
+
+description: > # L'uso di > permette di scrivere su più righe
+  As part of my work on distributed and pervasive systems, I designed and implemented DESM — a distributed energy supply simulation that mimics real-world dynamics between renewable energy providers and thermal power plants.
+
+  The project demonstrates my ability to:
+   - Build decentralized networks using gRPC for peer-to-peer coordination.
+   - Integrate MQTT protocols for sensor data transmission and broadcast communication.
+   - Handle concurrency and synchronization, implementing from-scratch coordination algorithms like the Chang and Roberts ring election.
+   - Simulate sensor-based systems, including dynamic CO₂ pollution tracking and environmental data processing with sliding window techniques.
+   - Design scalable systems that allow dynamic node insertion, fault tolerance, and RESTful control via admin interfaces.
+
+   In DESM, thermal plants are independent processes that negotiate energy requests in real time, publish sensor data periodically, and interact with both centralized and decentralized components of the system. I built the entire ecosystem locally, ensuring robustness through exception handling, modularity, and clean inter-process communication.
+
+
+role:
+  - Distributed System Designer
+  - Programmer
+tags:
+  - Java
+  - MQTT protocols
+  - gRPC connections
+  - REST interface
+
+project-date: "Giugno 2025"
+client: "Distributed and Pervasive system course"
+project-url: "https://github.com/Masonrocca21/DESM/tree/main"
 ---
