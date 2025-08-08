@@ -33,5 +33,5 @@ tags:
 
 project-date: "Giugno 2025"
 client: "Distributed and Pervasive system course"
-project-url: "https://github.com/Masonrocca21/DESM/tree/main"
+repo-url: "https://github.com/Masonrocca21/DESM/tree/main"
 ---

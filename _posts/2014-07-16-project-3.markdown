@@ -27,4 +27,5 @@ tags:
 
 project-date: "Febbraio 2024"
 project-url: "http://www.mat.unimi.it/users/alzati/Geometria_Computazionale_98-99/apps/geneticbezier/progetto.html#"
+repo-url: "https://github.com/Masonrocca21/Genetic-Bezier"
 ---
