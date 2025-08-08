@@ -3,7 +3,7 @@ title: "DESM - Distributed Energy Supply Management"
 project-type: academic
 subtitle: "A simulation of an energy supply network overseen by a renewable energy provider"
 modal-id: 5
-date: 2025-6-10
+date: 2023-6-10
 img: DESM.png
 modal-bg-color: "#71a882ff"        # Colore di sfondo del popup (es. giallo)
 modal-text-color: "#000000ff"      # Colore del testo (es. scuro)

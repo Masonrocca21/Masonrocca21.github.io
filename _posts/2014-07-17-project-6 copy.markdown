@@ -3,7 +3,7 @@ title: "Incremental Object Referral and Target Absent"
 project-type: academic
 subtitle: "A study on the human gaze and prediction by algorithms"
 modal-id: 6
-date: 2025-2-25
+date: 2023-2-25
 img: EyeGaze.png
 modal-bg-color: "#f68ffaff"        # Colore di sfondo del popup (es. giallo)
 modal-text-color: "#000000ff"      # Colore del testo (es. scuro)
