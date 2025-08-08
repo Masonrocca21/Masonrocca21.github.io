@@ -747,3 +747,12 @@ footer .footer-below {
     color: var(--modal-text, #2c3e50);
     background-color: var(--modal-bg, #fff);
 }
+
+/* ========================================= */
+/* Stile per le icone personalizzate (About)  */
+/* ========================================= */
+.competency-icon {
+  max-width: 128px; /* Dimensione massima dell'icona, puoi cambiarla */
+  height: auto;     /* Mantiene le proporzioni */
+  margin-bottom: 20px; /* Spazio tra l'icona e il titolo h4 sottostante */
+}
