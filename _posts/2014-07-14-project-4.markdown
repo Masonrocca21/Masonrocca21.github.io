@@ -8,7 +8,7 @@ img: RaceAgainstTime.png
 modal-bg-color: "#001886"        # Colore di sfondo del popup 
 modal-text-color: "#ffffff"      # Colore del testo 
 alt: "Screenshot del platform 2D"
-video-embed: "" # Opzionale/Da fare
+video-embed: "https://www.youtube.com/embed/CMFeDJNj5mo?si=KOsYkvdEIlEmC1t0" # Opzionale/Da fare
 
 description: > # L'uso di > permette di scrivere su più righe
   COMING SOON
@@ -33,4 +33,5 @@ tags:
   - Unity engine
 
 project-date: "2025 - Coming soon"
+gdd-id: "17ctNPMbxYjU1htfLxWyDkI30M-Eq5jPn"
 ---
