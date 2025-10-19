@@ -1,10 +1,10 @@
 ---
-title: "RaceAgainstTime"
+title: "Ouroboros Protocol"
 project-type: personal
 subtitle: "A puzzle game where you must break a teporal loop"
 modal-id: 4
 date: 2025-01-01
-img: RaceAgainstTime.png
+img: OuroborosProtocol.png
 modal-bg-color: "#1a1a1a"        # Colore di sfondo del popup 
 modal-text-color: "#0fb0b0"      # Colore del testo 
 alt: "Screenshot del platform 2D"
