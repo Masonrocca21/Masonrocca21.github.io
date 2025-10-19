@@ -769,8 +769,3 @@ footer .footer-below {
     height: 100%;           /* Assicura che il link occupi tutta l'altezza della card */
 }
 
-/* Opzionale: Se le immagini hanno altezze diverse, questo aiuta a uniformare */
-.portfolio-item .portfolio-link img {
-    min-height: 100%;
-    object-fit: cover; /* Scala l'immagine per coprire l'area senza deformarla, tagliando le parti in eccesso */
-}
