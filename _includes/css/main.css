@@ -757,15 +757,5 @@ footer .footer-below {
   margin-bottom: 20px; /* Spazio tra l'icona e il titolo h4 sottostante */
 }
 
-/* ============================================================= */
-/* Correzione per centrare le immagini nel portfolio             */
-/* ============================================================= */
 
-.portfolio-item .portfolio-link {
-    display: flex;          /* Attiva Flexbox anche per il link contenitore */
-    justify-content: center; /* Centra il contenuto (l'immagine) orizzontalmente */
-    align-items: center;     /* Centra il contenuto verticalmente */
-    overflow: hidden;       /* Nasconde eventuali parti dell'immagine che escono a causa dello zoom all'hover */
-    height: 100%;           /* Assicura che il link occupi tutta l'altezza della card */
-}
 
