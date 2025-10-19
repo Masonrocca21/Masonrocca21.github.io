@@ -757,5 +757,25 @@ footer .footer-below {
   margin-bottom: 20px; /* Spazio tra l'icona e il titolo h4 sottostante */
 }
 
+/* ============================================================= */
+/* Correzione per centrare le immagini nel portfolio             */
+/* ============================================================= */
+
+.portfolio-item .portfolio-link {
+    display: flex;
+    justify-content: center; /* Centra l'immagine orizzontalmente */
+    align-items: center;     /* Centra l'immagine verticalmente */
+    height: 100%;           /* Assicura che il contenitore occupi tutta l'altezza disponibile */
+    overflow: hidden;       /* Nasconde le parti in eccesso se l'immagine è più grande del contenitore */
+}
+
+/* Modifica importante: assicuriamo che l'immagine non venga mai ingrandita oltre la sua dimensione reale */
+.portfolio-item .portfolio-link img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    flex-shrink: 0; /* Impedisce all'immagine di rimpicciolirsi se il contenitore è troppo stretto */
+}
 
 
