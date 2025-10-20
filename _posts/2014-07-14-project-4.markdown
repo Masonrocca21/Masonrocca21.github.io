@@ -34,5 +34,5 @@ tags:
 
 project-date: "20/10/2025"
 project-url: "https://open-quest-studio.itch.io/ouroboros-protocol"
-gdd-id: "17ctNPMbxYjU1htfLxWyDkI30M-Eq5jPn"
+gdd-id: "1nPYbN0sGOdszi_W4mxYJdlVdvszi6Uot"
 ---
