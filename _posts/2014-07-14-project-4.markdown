@@ -11,7 +11,6 @@ alt: "Screenshot del platform 2D"
 video-embed: "https://www.youtube.com/embed/CMFeDJNj5mo?si=KOsYkvdEIlEmC1t0" # Opzionale/Da fare
 
 description: > # L'uso di > permette di scrivere su più righe
-  COMING SOON
   
   You wake up alone on a spaceship. It's quiet, too quiet.
   Something feels wrong… and then, suddenly, everything resets.
@@ -31,7 +30,9 @@ role:
   - Game & Level Designer
 tags:
   - Unity engine
+  - VR
 
-project-date: "2025 - Coming soon"
+project-date: "20/10/2025"
+project-url: "https://open-quest-studio.itch.io/ouroboros-protocol"
 gdd-id: "17ctNPMbxYjU1htfLxWyDkI30M-Eq5jPn"
 ---
