@@ -271,6 +271,16 @@ section.success {
     background: #{{ site.color.primary }};
 }
 
+.thesis-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.thesis-link:hover,
+.thesis-link:focus {
+    color: #2c3e50;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
