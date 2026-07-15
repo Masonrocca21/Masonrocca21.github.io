@@ -7,7 +7,7 @@ date: 2025-01-01
 img: OuroborosProtocol.png
 modal-bg-color: "#1a1a1a"        # Colore di sfondo del popup 
 modal-text-color: "#0fb0b0"      # Colore del testo 
-alt: "Screenshot del platform 2D"
+alt: "Screenshot of the Ouroboros Protocol spaceship interior during a time-loop puzzle sequence"
 video-embed: "https://www.youtube.com/embed/CMFeDJNj5mo?si=KOsYkvdEIlEmC1t0" # Opzionale/Da fare
 
 description: > # L'uso di > permette di scrivere su più righe

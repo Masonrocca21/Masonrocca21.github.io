@@ -9,7 +9,7 @@ modal-bg-color: "#FFE16B"        # Colore di sfondo del popup (es. giallo)
 modal-text-color: "#2c3e50"      # Colore del testo (es. scuro)
 frame-top: "bordo-superiore.png" # Immagine per il bordo superiore
 frame-bottom: "bordo-inferiore.png" # Immagine per il bordo inferiore
-alt: "Screenshot del platform 2D"
+alt: "Screenshot of the Murder Mystery Incorporated crime-planning timeline interface"
 video-embed: "https://www.youtube.com/embed/2-QAznsU8a4?si=G03rzjP7_Z9XonAR" # Opzionale
 
 description: > # L'uso di > permette di scrivere su più righe

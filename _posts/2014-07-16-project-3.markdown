@@ -7,7 +7,7 @@ date: 2024-2-14
 img: GeneticsBezier.png
 modal-bg-color: "#902528"        # Colore di sfondo del popup (es. giallo)
 modal-text-color: "#F5F5F5"      # Colore del testo (es. scuro)
-alt: "Screenshot del platform 2D"
+alt: "Visualization of a Bézier surface evolved through a genetic algorithm in the GeneticsBezier tool"
 video-embed:  # Opzionale, da fare
 
 description: > # L'uso di > permette di scrivere su più righe

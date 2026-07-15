@@ -7,7 +7,7 @@ date: 2024-7-5
 img: UNIPAST.png
 modal-bg-color: "#010100"        # Colore di sfondo del popup (es. giallo)
 modal-text-color: "#F5F5F5"      # Colore del testo (es. scuro)
-alt: "Screenshot del platform 2D"
+alt: "Screenshot of a cooperative platforming level in UNIPAST: The Mangiagalli Project"
 video-embed: "https://www.youtube.com/embed/XKlkTsE_ZD8?si=0FF5OwJ_2rrhbZER" # Opzionale
 
 description: > # L'uso di > permette di scrivere su più righe
