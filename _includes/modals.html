@@ -93,6 +93,10 @@
               {% if post.tdd-id %}
                 <a href="https://drive.google.com/file/d/{{ post.tdd-id }}/preview" class="btn btn-info btn-lg" target="_blank"><i class="fa fa-cogs"></i> View TDD</a>
               {% endif %}
+
+              {% if post.thesis-url %}
+                <a href="{{ post.thesis-url }}" class="btn btn-info btn-lg" target="_blank"><i class="fa fa-graduation-cap"></i> View Thesis</a>
+              {% endif %}
             <!-- ===== FINE NUOVI PULSANTI ===== -->
             </div>
             

@@ -1,0 +1,42 @@
+---
+title: "SPECTRA — Emotional Contagion NPCs in VR"
+project-type: academic
+subtitle: "A Master's thesis: NPCs that catch feelings, inside a hierarchical social scene built in Unreal Engine 5"
+modal-id: 7
+date: 2026-4-19
+img: SPECTRA_Scene.png
+modal-bg-color: "#12071c"        # Deep violet, VR/sci-fi mood
+modal-text-color: "#c9a8ff"      # Soft violet text
+alt: "Screenshot of the Il Portale VR scene built in Unreal Engine 5"
+video-embed: # None yet, image used instead
+
+description: > # L'uso di > permette di scrivere su più righe
+  My Master's thesis project: an interactive VR demo built entirely in Unreal Engine 5, where three MetaHuman NPCs are wired together by a real emotional contagion model instead of scripted dialogue trees.
+  <br><br>
+  The scene, "Il Portale," is a tense checkpoint guarded by three NPCs with distinct social roles: Pasquale (the unshakeable leader), Poldo (the loyal bridge), and Federica (the emotional spark of the group). Space itself is part of the design — NPC positioning defines zones of influence, and how close the player stands determines who can hear, and be moved by, them.
+  <br><br>
+  There's no dialogue tree here. Each NPC runs on a Blueprint-driven affective engine (six discrete emotions per Ekman's model, propagated through a custom "ripple effect" system) fed by real-time LLM-generated dialogue and rendered live through MetaHuman facial rigs over OpenXR. Winning the scene means realizing you can't out-argue the leader directly — you have to move Federica first and let the emotional wave spread through the group.
+  <br><br>
+  <img src="img/portfolio/SPECTRA_Blueprint.png" class="img-responsive img-centered" alt="Blueprint architecture in Unreal Engine 5" style="margin: 20px 0; border-radius: 4px;">
+  <br>
+  I designed and built the full multi-agent architecture in Blueprint: a scalable NPC data structure that decouples each agent's control logic from its physical instance, a centralized middleware for LLM requests, and proxemic/gaze-tracking systems tuned for Meta Quest to keep latency low enough for the illusion of social presence to hold.
+  <br><br>
+  The system was validated with 21 participants in a VR user study measuring perceived realism, emotional contagion, and spatial awareness — turning this from a tech demo into an empirically tested piece of interactive design.
+
+role:
+  - Level & Systems Designer
+  - UE5 Blueprint Developer
+  - VR / UX Designer
+
+tags:
+  - Unreal Engine 5
+  - Blueprint
+  - VR (Meta Quest)
+  - MetaHuman
+  - LLM Integration
+  - Affective Computing
+
+project-date: "A.A. 2024–2025"
+client: "Master's Thesis in Computer Science — Università degli Studi di Milano"
+thesis-url: "assets/Thesis_SPECTRA_Colombo.pdf"
+---
