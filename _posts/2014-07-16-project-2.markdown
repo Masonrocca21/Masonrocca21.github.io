@@ -23,6 +23,8 @@ role:
   - UI designer
 tags:
   - Unreal Engine 5
+  - Multiplayer
+  - Blueprint
 
 project-date: "Luglio 2024"
 client: "New game Designer 2024"
