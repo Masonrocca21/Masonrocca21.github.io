@@ -1,7 +1,7 @@
 <!-- Header -->
 <header>
-  <!-- Contenitore dedicato SOLO alle particelle -->
-  <div id="particles-js"></div>
+  <!-- Griglia stile "viewport editor 3D" al posto di particles.js -->
+  <canvas id="viewport-grid"></canvas>
 
   <!-- Contenitore dedicato SOLO al contenuto (foto, testo, etc.) -->
   <div class="container">
@@ -21,10 +21,6 @@
 <!-- I tuoi script qui sotto rimangono IDENTICI -->
 <script>
   document.addEventListener('DOMContentLoaded', function(){
-    particlesJS.load('particles-js', 'assets/particles.json', function() {
-      console.log('Particles.js config loaded');
-    });
-
     var typed = new Typed('#typed-skills', {
       strings: ["{{ site.skills }}"],
       typeSpeed: 50,
@@ -34,4 +30,101 @@
       cursorChar: '_',
     });
   });
+</script>
+
+<!-- Griglia prospettica animata (sostituisce particles.js) -->
+<script>
+(function () {
+  var canvas = document.getElementById('viewport-grid');
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
+  var header = canvas.parentElement;
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+  var mouseX = 0, mouseY = 0; // target, normalized -1..1
+  var parX = 0, parY = 0;     // eased current value
+  var t = 0;
+
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function resize() {
+    var w = header.clientWidth;
+    var h = header.clientHeight;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  header.addEventListener('mousemove', function (e) {
+    var rect = header.getBoundingClientRect();
+    mouseX = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+    mouseY = ((e.clientY - rect.top) / rect.height) * 2 - 1;
+  });
+
+  header.addEventListener('mouseleave', function () {
+    mouseX = 0;
+    mouseY = 0;
+  });
+
+  function draw() {
+    var w = header.clientWidth;
+    var h = header.clientHeight;
+    ctx.clearRect(0, 0, w, h);
+
+    parX += (mouseX - parX) * 0.04;
+    parY += (mouseY - parY) * 0.04;
+
+    var horizon = h * 0.58 + parY * 18;
+    var vanishX = w / 2 + parX * 40;
+
+    ctx.lineWidth = 1;
+
+    // Linee verticali convergenti (griglia del pavimento)
+    var spanTop = 5;
+    var spanBottom = 140;
+    var count = 14;
+    ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+    for (var i = -count; i <= count; i++) {
+      var topX = vanishX + i * spanTop;
+      var bottomX = vanishX + i * spanBottom;
+      ctx.beginPath();
+      ctx.moveTo(topX, horizon);
+      ctx.lineTo(bottomX, h);
+      ctx.stroke();
+    }
+
+    // Linee orizzontali con spaziatura prospettica, in lento avvicinamento
+    var speed = reduceMotion ? 0 : 0.012;
+    var cycle = 60;
+    var offset = reduceMotion ? 0 : (t * speed * cycle) % cycle;
+
+    for (var j = 0; j < 9; j++) {
+      var progress = (j + offset / cycle) / 9;
+      if (progress >= 1) continue;
+      var y = horizon + Math.pow(progress, 2.2) * (h - horizon);
+      var alpha = 0.22 * (1 - progress) + 0.03;
+      ctx.strokeStyle = 'rgba(255,255,255,' + alpha.toFixed(3) + ')';
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(w, y);
+      ctx.stroke();
+    }
+
+    // Linea dell'orizzonte
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
+    ctx.beginPath();
+    ctx.moveTo(0, horizon);
+    ctx.lineTo(w, horizon);
+    ctx.stroke();
+
+    t += 1;
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+  draw();
+})();
 </script>
