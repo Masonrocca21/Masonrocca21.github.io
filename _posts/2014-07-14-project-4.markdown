@@ -30,7 +30,7 @@ role:
   - Game & Level Designer
 tags:
   - Unity engine
-  - VR
+  - VR (Meta Quest)
 
 project-date: "20/10/2025"
 project-url: "https://open-quest-studio.itch.io/ouroboros-protocol"
