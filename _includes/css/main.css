@@ -397,6 +397,36 @@ section.success {
   margin: 0;
 }
 
+/* Filtro portfolio per tag/tecnologia */
+.portfolio-filter {
+    margin-bottom: 40px;
+}
+
+.portfolio-filter .filter-btn {
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 20px;
+    border: 2px solid #{{ site.color.primary }};
+    border-radius: 50px;
+    background: #fff;
+    color: #{{ site.color.primary }};
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio-filter .filter-btn:hover {
+    background: rgba({{ site.color.primary-rgb }},.15);
+}
+
+.portfolio-filter .filter-btn.active {
+    background: #{{ site.color.primary }};
+    color: #fff;
+}
+
 /* ===== FINE SEZIONE PORTFOLIO MODIFICATA ===== */
   
 /* A large grid might need four columns on widescreen layouts */
